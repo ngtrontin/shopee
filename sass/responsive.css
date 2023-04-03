@@ -1,0 +1,97 @@
+/* mobile & tablet */
+@media (max-width:1023px) {
+    :root {
+        --height-header: 68px;
+        --height-info: 0px;
+        --height-search: calc( var(--height-header) - var(--height-info) ) ;
+    }
+
+    .navbar-header {
+        position: fixed;
+        z-index: 5;
+    }
+
+    .hide-mobile-tablet {
+        display: none !important;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart {
+        width: 80px;
+        text-align: right;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__quantity {
+        right: 0px;
+    }
+
+    .main .pt {
+        padding-top: calc((var(--body-home-tablet-mobile-height) + var(--height-header)) + 20px);
+    }
+
+    .main .body-home-tablet-mobile {
+        display: block;
+    }
+
+    .main .category {
+        display: block;
+    }
+}
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .hide-tablet {
+        display: none !important;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__input .navbar-search__input--history {
+        width: 66%;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__item {
+        right: -7px;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__item::before {
+        right: 6px;
+    }
+
+}
+/* mobile */
+@media (max-width:739px) {
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .main .pt .body .body-pagination .pagination-list .pagination-item {
+        margin: 0;
+    }
+
+    .footer .footer-info .footer-info__text {
+        text-align: center;
+    }
+
+    .footer .footer-info .footer-info__text .footer-dowload {
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__cart-icon {
+        margin-right: 16px;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__quantity {
+        right: 16px;
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__item {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        right: 0;
+        top: var(--height-header);
+    }
+
+    .navbar-header .navbar-container .navbar-search .navbar-search__cart .navbar-search__item::before {
+        display: none;
+    }
+
+}
